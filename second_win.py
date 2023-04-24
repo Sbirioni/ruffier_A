@@ -2,6 +2,7 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QLineEdit
 from instr import *
+from final_win import *
 
 class TestWin(QWidget):
     def __init__(self):
@@ -35,10 +36,13 @@ class TestWin(QWidget):
         self.l_line.addWidget(self.line_name, alignment = Qt.AlignLeft)
         self.l_line.addWidget(self.text_test1, alignment= Qt.AlignLeft)
         self.l_line.addWidget(self.button_test1, alignment= Qt.AlignLeft)
+        self.l_line.addWidget(self.line_test1, alignment= Qt.AlignLeft)
         self.l_line.addWidget(self.text_test2, alignment= Qt.AlignLeft)
         self.l_line.addWidget(self.button_test2, alignment= Qt.AlignLeft)
         self.l_line.addWidget(self.text_test3, alignment= Qt.AlignLeft)
         self.l_line.addWidget(self.button_test3, alignment= Qt.AlignLeft)
+        self.l_line.addWidget(self.line_test2, alignment= Qt.AlignLeft)
+        self.l_line.addWidget(self.line_test3, alignment= Qt.AlignLeft)
         self.l_line.addWidget(self.button_next, alignment= Qt.AlignCenter)
         self.h_line.addLayout(self.l_line)
         self.h_line.addLayout(self.r_line)
